@@ -2,61 +2,59 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <title>MASA • Loja Online</title>
+  <title>MASA • Moda Feminina</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- TOPO LOCALIZAÇÃO -->
+<!-- TOP BAR -->
 <div class="top-bar">
-  <span id="location">A detectar localização...</span>
+  Enviamos para todo o país 🇦🇴 | Moda feminina com estilo ✨
 </div>
 
 <!-- HEADER -->
 <header class="header">
   <div class="header-inner">
+
+    <!-- MOBILE -->
     <button class="hamburger" id="hamburger">☰</button>
 
+    <!-- LOGO -->
     <img src="logo.png" class="logo" alt="MASA">
 
-    <nav class="nav-desktop">
-      <a href="#">Início</a>
-      <a href="#">Produtos</a>
-      <a href="#">Categorias</a>
-      <a href="#">Contato</a>
-    </nav>
-
+    <!-- AUTH -->
     <div class="auth">
-      <button id="loginBtn">Iniciar Sessão</button>
-      <button id="signupBtn" class="primary">Criar Conta</button>
+      <a href="#">Iniciar Sessão</a>
+      <a href="#" class="primary">Criar Conta</a>
     </div>
+
   </div>
 
-  <!-- MOBILE MENU -->
-  <nav class="nav-mobile" id="mobileMenu">
-    <a href="#">Início</a>
-    <a href="#">Produtos</a>
-    <a href="#">Categorias</a>
-    <a href="#">Contato</a>
+  <!-- CATEGORIAS -->
+  <nav class="categories" id="mobileMenu">
+    <a href="#">Novidades</a>
+    <a href="#">Vestidos</a>
+    <a href="#">Tops</a>
+    <a href="#">Calças</a>
+    <a href="#">Conjuntos</a>
+    <a href="#">Acessórios</a>
+    <a href="#" class="highlight">Promoções</a>
   </nav>
 </header>
 
-<!-- MAIN -->
+<!-- HERO -->
+<section class="hero">
+  <h1>Nova Coleção</h1>
+  <p>Looks pensados para realçar quem você é 💖</p>
+  <button class="primary">Ver Novidades</button>
+</section>
+
+<!-- PRODUTOS -->
 <main class="container">
+  <h2>Mais Vendidos</h2>
   <section class="products" id="products"></section>
 </main>
-
-<!-- POPUP -->
-<div class="popup" id="popup">
-  <div class="popup-box">
-    <span class="close" id="closePopup">&times;</span>
-    <h2 id="pName"></h2>
-    <p id="pPrice"></p>
-    <p id="pDesc"></p>
-    <button class="primary">Comprar</button>
-  </div>
-</div>
 
 <script src="app.js"></script>
 </body>

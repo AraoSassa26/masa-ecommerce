@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// 👇 SERVIR FRONTEND
+
 app.use(express.static(path.join(__dirname, "../public")));
 
 // Rotas API
